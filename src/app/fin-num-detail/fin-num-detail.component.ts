@@ -11,7 +11,7 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class FinNumDetailComponent {
   // See https://angular.io/api/router/withComponentInputBinding
-  @Input({ transform: numberAttribute }) number!: number;
+  @Input({ transform: numberAttribute }) number: number = 0;
 
   constructor(private router: Router) { }
 

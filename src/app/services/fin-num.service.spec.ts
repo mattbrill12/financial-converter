@@ -20,6 +20,10 @@ describe('FinancalNumberService', () => {
     { input: '10', output: 10 }, // No mulitplier 
     { input: '1K', output: 1000 }, // Accept uppercase
     { input: '1 thousand', output: 1000 }, // Accept thousand
+    { input: '123456789123456789b', output: 1.2345678912345679e+26 }, // Accept large numbers (scientific notation)
+    { input: '-123456789123456789b', output: -1.2345678912345679e+26 }, // Accept large negative number (scientific notation)
+    { input: '1.7976931348623157e+310', output: Number.POSITIVE_INFINITY }, // Handle number larger than Number.MAX_VALUE=1.7976931348623157e+308
+
     // error cases
     { input: '1w', output: NaN }, // Not a valid unit
     { input: 'y1k', output: NaN }, // Not a valid number
