@@ -4,17 +4,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Take Home Summary
 
-Created project using `ng new financial-converter`
-Created business logic `ng g s services/fin-num-service`
-Added test cases for the `finNumService`
-Created two components `ng g c fin-num-form` & `ng g c fin-num-detail`
-Updated routing logic with Home Page and Detail Page
-Updated components to pass the converted number as a route param
-Added error handling for Detail Page
-Cleaned up UI with https://simplecss.org/demo
+- Created project using `ng new financial-converter`
+- Created business logic `ng g s services/fin-num`
+- Added test cases for the `FinNumService`
+- Created two components `ng g c fin-num-form` & `ng g c fin-num-detail`
+- Updated routing logic with `Home Page` and `Detail Page`
+- Updated components to pass the converted number as a route param
+- Added error handling for Detail Page
+- Cleaned up UI with https://simplecss.org/demo
 
 ### Added Scope
-Added Supported Units map for the user to see
+
+- Added Supported Units map for the user to see
 
 ## Development server
 
