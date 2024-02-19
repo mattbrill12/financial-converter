@@ -1,0 +1,14 @@
+<section>
+    <p>
+        <label>Please enter a financial number to be converted!</label>
+        <input type="text" id="financialNumber" name="financialNumber" #inputValue
+            (input)="financialNumber=inputValue.value">
+    </p>
+    <button (click)="onClick()" [disabled]="!isValid()">Convert</button>
+    <p><strong>Supported Financial Units</strong></p>
+    <ul>
+        @for (unit of finNumService.getSupportedUnits().entries(); track unit.keys) {
+        <li>{{ unit[0] }}: {{ unit[1] | number }}</li>
+        }
+    </ul>
+</section>

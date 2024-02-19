@@ -1,0 +1,30 @@
+.logo1 {
+
+    font-size: var(--desktop_height, 42px);
+
+    img,
+    svg {
+        display: block;
+        height: 1em;
+    }
+
+    svg>* {
+        transition-property: fill;
+    }
+
+    .-blue {
+        fill: #326CF4;
+    }
+
+    .-black {
+        fill: #010000;
+    }
+
+    .-red {
+        fill: #D7272B;
+    }
+
+    .-tm {
+        fill: #BFC3C2;
+    }
+}
